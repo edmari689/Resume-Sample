@@ -1,0 +1,132 @@
+body
+{
+background-image: url('images/white.jpg');
+background-attachment: fixed;
+background-size: 100%;
+}
+
+h1, p, legend, th, td
+{
+	font-family: Arial;
+}
+
+td
+{
+	text-align: center;
+}
+
+legend
+{
+	font-weight: bold;
+}
+
+#buttonBar
+{
+	margin: 0 auto;
+}
+
+button
+{
+	background-color: gray;
+	border: none;
+	color: black;
+	padding: 10px 22px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 5px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	box-shadow: 0 9px #999;
+}
+
+button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.faceDiv
+{
+	position: absolute;
+	top: 5%;
+	right: 50px;
+}
+
+.homeDesign
+{
+	position: static;
+	top: 25%;
+	right: 40%;
+	text-align: center;
+}
+
+img
+{
+	width: 100px;
+	height: 100px;
+}
+
+fieldset#opening
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#skillset
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#work
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#education
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#interest
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#reason
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
+
+fieldset#misc
+{
+	position: absolute;
+	text-align: justified;
+	visibility: hidden;
+	top: 35%;
+	left: 10%;
+}
