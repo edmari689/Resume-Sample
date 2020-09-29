@@ -34,16 +34,54 @@ img {
   text-shadow: 2px 2px 5px white;
 }
 
+.textStyle{
+	text-align: justify;
+	line-height: 1.5;
+	word-spacing: 4px;
+}
+
+h2{
+	color: #B64E0A;
+	text-shadow: 2px 2px #4E4724;
+}
+
+h3{
+	color: #400E3A;
+	font-style: italic;
+}
+
+.markHighlight{
+	font-weight: bold;
+}
+
+.colorCase1{
+	 background-color: #74B7B8;
+}
+
+.widthDistance{
+	width: 55vw;
+	margin: auto; 
+	margin-bottom: 40px;
+}
+
+.tableDistance{
+	width: 80vw;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
 .wholeGrid{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	}
 
 .leftGrid{
+	margin-left: 100px;
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
 .rightGrid{
+	margin-right: 100px;
 	grid-column-start: 3;
 	grid-column-end: 4;
 }
