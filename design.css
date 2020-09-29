@@ -22,26 +22,28 @@ img {
 
 .topHeader {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 4;
   background-image: url("images/photo2.jpg");
   width: 100%;
-  height: auto;
+  height: 600px;
   padding: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  color: red;
+  text-shadow: 2px 2px 5px white;
 }
 
-.opening, .skillset, .work, .reason, .misc, .highschoolBio, .highschoolPhoto, .elementaryBio{
+.wholeGrid{
 	grid-column-start: 2;
 	grid-column-end: 4;
 	}
 
-.collegePhoto, .highschoolBio, .interestPhoto{
+.leftGrid{
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
-.collegeBio, .highschoolPhoto, .interest{
+.rightGrid{
 	grid-column-start: 3;
 	grid-column-end: 4;
 }
