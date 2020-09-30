@@ -40,6 +40,8 @@ img {
 	word-spacing: 4px;
 }
 
+.indentInput{text-indent: 40px;}
+
 h2{
 	color: #B64E0A;
 	text-shadow: 2px 2px #4E4724;
@@ -50,13 +52,9 @@ h3{
 	font-style: italic;
 }
 
-.markHighlight{
-	font-weight: bold;
-}
+.markHighlight{font-weight: bold;}
 
-.colorCase1{
-	 background-color: #74B7B8;
-}
+.colorCase1{background-color: #74B7B8;}
 
 .widthDistance{
 	width: 55vw;
@@ -84,4 +82,26 @@ h3{
 	margin-right: 100px;
 	grid-column-start: 3;
 	grid-column-end: 4;
+}
+
+table {border-collapse: collapse;}
+
+th {
+	text-align: center;
+	background-color: #3AA74F;
+	color: #400E3A;
+}
+
+th, td{
+	height: 120px;
+}
+
+tr:nth-child(odd) {
+	background-color: #D9D9D9;
+	text-align: justify;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+	text-align: center;
 }
