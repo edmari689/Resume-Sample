@@ -4,63 +4,18 @@
 		<link rel="stylesheet" href="design.css" />
 		<meta name="author" content="Edmari Callangan">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	</head>
-	
-	<!-- 
-	starting to construct the layout of the page
-	-->
-
-	
 	<body>
-		<center>
-		<table border="0">
-			<tr>
-				<td><h1>Edmari C. Callangan</h1></td>
-			</tr>
-			<tr>
-				<td><p>Ichikawa-Shi, Chiba</p></td>
-				<td><p>070-406-58320</p></td>
-			</tr>
-			<tr>
-				<td><p>272-0127</p></td>
-				<td><p>edmari689@yahoo.com</p></td>
-			</tr>
-		</table>
-		</center>
-		
-		<br><br>
-		<table border="0" id="buttonBar">
-		<tr>
-			<td><button type="button" onclick="myIntro()">Opening</button></td>
-			<td><button type="button" onclick="mySet()">Skillset</button></td>
-			<td><button type="button" onclick="myWork()">Work Background</button></td>
-			<td><button type="button" onclick="myStudy()">School Background</button></td>
-			<td><button type="button" onclick="myHobby()">Interest/Achievements</button></td>
-			<td><button type="button" onclick="myReason()">Motivation</button></td>
-			<td><button type="button" onclick="myOthers()">Miscellaneous</button></td>
-		</tr>
-		</table>
-		<br>
-		
-		<div class="faceDiv">
-			<img src="images/photo1.jpg" alt="Profile Pic">
+	<div class="layout">
+		<div class="topHeader" id="fadeEffect">
+			<h1>That is<br>Edmari C. Callangan</h1>
 		</div>
-		
-		<div class="homeDesign" id="home">
-			<h3>Welcome to Resume Page!</h3>
-			<h3>This page displays simple design for seeking information with event effects.</h3>
-			<h3>You may try clicking the buttons to see more information in this page.</h3>
+		<div class="wholeGrid widthDistance colorCase1 textStyle" id="roundCorner">
+			<h2>Career Objective Statement</h2>
+			<p class="indentInput">To attain a significant and challenging position where my educational background and skills can help in achieving the goals of the company, thereby exploit to the fullest my potentials and sense of fulfillment in contributing for the benefits and upliftment of the organization.</p>
 		</div>
-		
-		<fieldset id="opening">
-			<legend>Career Objective Statement</legend>
-			<p>To attain a significant and challenging position where my educational background and skills can help in achieving the goals of the company, <br>
-			thereby exploit to the fullest my potentials and sense of fulfillment in contributing for the benefits and upliftment of the organization.</p>
-		</fieldset>
-		<br>
-		<fieldset id="skillset">
-			<legend>Skills and attributes</legend>
+		<div class="wholeGrid widthDistance textStyle">
+			<h2>Skills and Attributes</h2>
 			<p>- Languages (English, Filipino, conversational Japanese)</p>
 			<p>- Programming (basic knowledge with coding for PHP, C++, C#, Java, Visual Basic, MySQL, JavaScript)</p>
 			<p>- Web Developing (firm application with HTML and CSS, and basic knowledge of web framework and its CMS such as WordPress)</p>
@@ -71,11 +26,10 @@
 			<p>- Good organizational skills properly integrated and focused on work.</p>
 			<p>- Having responsibility of handling tasks at hand.</p>
 			<p>- Strive to help peopleÅfs needs.</p>
-		</fieldset>
-		<br>
-		<fieldset id="work">
-			<legend>Work Experience</legend>
-			<table border="2">
+		</div>
+		<div class="wholeGrid tableDistance">
+			<h2>Work Background</h2>
+			<table border="0">
 			<tr>
 				<th>Title</th>
 				<th>Company</th>
@@ -87,7 +41,7 @@
 				<td>April 2019-December 2019</td>
 			</tr>
 			<tr>
-				<td>Contracted for test playing Android games on the companyÅfs emulator, <br> and writing articles about these games and their game mechanics.</td>
+				<td colspan="3">Contracted for test playing Android games on the company's emulator, and writing articles about these games and their game mechanics.</td>
 			</tr>
 			<tr>
 				<td>IT Partnership</td>
@@ -95,7 +49,7 @@
 				<td>July 17, 2017-September 26, 2017</td>
 			</tr>
 			<tr>
-				<td>Responsible for selling products from the website, maintaining the website, <br> selecting good products for sales, organizing marketing documents on Dropbox, and sourcing products.</td>
+				<td colspan="3">Responsible for selling products from the website, maintaining the website, selecting good products for sales, organizing marketing documents on Dropbox, and sourcing products.</td>
 			</tr>
 			<tr>
 				<td>On-the-Job Training Program</td>
@@ -103,59 +57,72 @@
 				<td>2014</td>
 			</tr>
 			<tr>
-				<td>Tasked to create a system that could grade workersÅf performance rated by supervisor using <br> Microsoft Visual Studio, accompanied with group of college students.</td>
+				<td colspan="3">Tasked to create a system that could grade workers' performance rated by supervisor using Microsoft Visual Studio, accompanied with group of college students.</td>
 			</tr>
 			</table>
-		</fieldset>
-		<br>
-		<fieldset id="education">
-			<legend>Education</legend>
-			<table border="2">
-			<tr>
-				<th>Level</th>
-				<th>Name of School</th>
-				<th>School Years</th>
-			</tr>
-			<tr>
-				<td>Tertiary</td>
-				<td>Ateneo de Davao University College <br> Bachelor of Science in Information Technology <br> Davao City, Philippines</td>
-				<td>2011 - 2015</td>
-			</tr>
-			<tr>
-				<td>Secondary</td>
-				<td>The Quantum Academy Inc. <br> General Santos City, Philippines</td>
-				<td>2008 - 2011</td>
-			</tr>
-			<tr>
-				<td>Elementary</td>
-				<td>The Southkids International School <br> Paranaque City, Metro Manila, Philippines <br> Valedictorian</td>
-				<td>2004 - 2007</td>
-			</tr>
-			</table>
-		</fieldset>
-		<br>
-		<fieldset id="interest">
-			<legend>Interests and Achievements</legend>
-			<p>- I like to play badminton with fun; sometimes, I also love to play volleyball.</p>
-			<p>- I enjoy editing video and music clips in my laptop for both fun and school course works.</p>
-			<p>- I love to play fantasy, action, and role-playing videos at my laptop, Nintendo 3DS, and PS3.</p>
-			<p>- I love to watch Japanese TV anime series and movies for me to know their stories well.</p>
-			<p>- I received Certificate of Completion in driving lessons, traffic rules and regulations, and preventive maintenance from a Philippine company called A1 Driving Company.</p>
-		</fieldset>
-		<br>
-		<fieldset id="reason">
-			<legend>Motivation</legend>
-			<p>The motivation he expresses his interest in applying for the internship is to know how to experience working remotely with colleagues in communicating for field of work.</p>
-			<p>He also desires good learning progress on receive IT knowledge of new technologies in order to support work with strong skillset.</p>
-			<p>Also, he opens his interaction on a working environment where he can converse with colleagues, customers and clients.</p>
-		</fieldset>
-		<br>
-		<fieldset id="misc">
-			<legend>Other Information</legend>
-			<p>About the visa status, this may relate to the diplomat-like version that depends on parent's work in Tokyo. If the career requires full-time work, then that visa should be sponsored.</p>
-			<p>About Japanese proficiency, the level that suits to particular jobs is at conversational level with good understanding of kanji characters, grammar and vocabulary, <br> but the actual proficiency has passed JLPT N5 and N4.</p>
-		</fieldset>
-		
-		<script src="function.js"></script>	
+		</div>
+		<div class="leftGrid">
+			<img src="images/college.jpg" />
+		</div>
+		<div class="rightGrid textStyle">
+			<h2>Education Background</h2>
+			<h3>Ateneo de Davao University</h3>
+			<p class="markHighlight">Bachelor of Science in Information Technology, admiitted from 2011 and graduated on 2015</p>
+			<p class="markHighlight">Davao City, Philippines</p> <br>
+			<p class="indentInput">This journey has led him to take the great path in studying about Information Technology and its affiliated subjects. It is not just about pure concentration of the studious path, but also to discover brand a new social life to instill opportunities with people.</p> <br>
+			<p class="indentInput">Having this IT course, he has been surrounded with computer projects that deal a lot of programming to present, including OJT, technoprenuer, client's needs, research thesis, and gaming showcases. </p>
+			<p class="indentInput">In sports event, he has been awarded for 3rd place in Track and Field, and also for 1st runner-up in Scrabble.</p>
+		</div>
+		<div class="leftGrid textStyle">
+			<h3>The Quantum Academy Inc.</h3>
+			<p class="markHighlight">Admiitted from 2008 and graduated on 2011</p>
+			<p class="markHighlight">General Santos City, Philippines</p> <br>
+			<p class="indentInput">His student life has made himself to adapt rural environment to understand differences of living in urban and rural areas.</p>
+			<p class="indentInput">He has been awarded for 2nd Honors' List in 2010-2011 based on grades. He had been trained for Taekwondo around a year, and earned orange belt.</p> <br><br>
+			<h3>Global Indian International School</h3>
+			<p class="markHighlight">Admiitted from 2009 for 3 months of study</p>
+			<p class="markHighlight">Tokyo, Japan</p> <br>
+			<p class="indentInput">He has attended at a foreign highschool consisted of various foreign students such as Indian, Japanese and Sri Lanka students. He pursued this opportunity from his blessed family through gaining experiences in interactions and living in Japan with his desire.</p> <br><br>
+			<h3>De La Salle Canlubang University</h3>
+			<p class="markHighlight">Admiitted from 2007, finished on 2008</p>
+			<p class="markHighlight">Laguna, Philippines</p> <br>
+			<p class="indentInput">This is the first highschool he has attended at, recommended by his elementary teachers and families. Its facilities have made him utilized in club activities to explore on sports, christianity teachings, and home economy practices, as well as accomplishing academic projects.</p>
+			<p class="indentInput">He has earned awards on Trimester Honor's List based on grades.<p>
+		</div>
+		<div class="rightGrid">
+			<img src="images/highschool.jpg" /> <br>
+			<img src="images/highschool2.jpg" /> <br>
+			<img src="images/highschool3.jpg" />
+		</div>
+		<div class="wholeGrid widthDistance textStyle">
+			<h3>The Southkids International School</h3>
+			<p class="markHighlight">Admiitted from 2004 and graduated on 2007</p>
+			<p class="markHighlight">Paranaque City, Metro Manila, Philippines</p> <br>
+			<p class="indentInput">He has been awarded his highest grades being as a valedictorian in his elementary time. He has been interacted with few autistic students around his school through helping them in how to communicate normally with their gestures.</p>
+		</div>
+		<div class="leftGrid">
+			<img src="images/badminton.jpg" /> <br>
+			<img src="images/rpg.jpg" /> <br>
+			<img src="images/music.jpg" />
+		</div>
+		<div class="rightGrid textStyle">
+			<h2>My Hobbies</h2>
+			<p class="indentInput">His sports have made him taken more likes to play in soccer and volleyball, and his favorite is badminton.</p> <br>
+			<p class="indentInput">He loves to play video games on video consoles and mobile phones with the genres of RPG, adventure, action, fighting, and racing. He likes to invest some games that have impactful stories more than repititive fights, though that can be tolerated.</p> <br>
+			<p class="indentInput">He loves to watch anime shows and movies as well as artful animated works. He also watches live media and YouTube that trend on their popularity and other niches.</p> <br>
+			<p class="indentInput">He does listen to musical songs to various artists as well as sound effects. His favorite genres are pop, JPOP, rock, and hip-hop</p>
+		</div>
+		<div class="wholeGrid widthDistance textStyle">
+			<h2>Motivation</h2>
+			<p class="indentInput">The motivation he expresses his interest in applying for the internship is to know how to experience working remotely with colleagues in communicating for field of work.</p>
+			<p class="indentInput">He also desires good learning progress on receive IT knowledge of new technologies in order to support work with strong skillset.</p>
+			<p class="indentInput">Also, he opens his interaction on a working environment where he can converse with colleagues, customers and clients.</p>
+		</div>
+		<div class="wholeGrid widthDistance textStyle">
+			<h2>Other Information</h2>
+			<p class="indentInput">About the visa status, this may relate to the diplomat-like version that depends on parent's work in Tokyo. If the career requires full-time work, then that visa should be sponsored.</p>
+			<p class="indentInput">About Japanese proficiency, the level that suits to particular jobs is at conversational level with good understanding of kanji characters, grammar and vocabulary, <br> but the actual proficiency has passed JLPT N5 and N4.</p>
+		</div>
+	</div>
 	</body>
 </html>
