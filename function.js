@@ -1,3 +1,5 @@
+
+/*
 var scrollToTopBtn = document.querySelector(".topButton");
 var rootElement = document.documentElement;
 
@@ -13,13 +15,13 @@ function handleScroll() {
 function scrollToTop() {
   rootElement.scrollTo({
     top: 0,
-    behavior: "smooth";
+    behavior: "smooth"
   })
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+*/
 
-/*
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -32,4 +34,3 @@ $(window).on("load",function() {
     });
   }).scroll(); 
 });
-*/
