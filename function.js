@@ -1,3 +1,12 @@
+function scrollingTop() {
+  if(window.scrollY!=0)
+  {
+      setTimeout(function() {
+         window.scrollTo(0,window.scrollY-30);
+          scrollingTop();
+      }, 0);
+   }
+}
 
 /*
 var scrollToTopBtn = document.querySelector(".topButton");

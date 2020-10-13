@@ -119,10 +119,12 @@ tr:nth-child(even) {
 .footer{
 	grid-column-start: 1;
 	grid-column-end: 5;
-	background-color: white;
+	background-color: gray;
 	height: 150px;
 	text-align: center;
 }
+
+.topLink{cursor: pointer;}
 /*
 .topButton{
 	position: fixed;
