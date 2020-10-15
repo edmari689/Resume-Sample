@@ -1,11 +1,9 @@
 function scrollingTop() {
-  if(window.scrollY!=0)
-  {
-      setTimeout(function() {
-         window.scrollTo(0,window.scrollY-30);
-          scrollingTop();
-      }, 0);
-   }
+  const y = window.scrollY;
+  if(y > 0){
+    window.requestAnimationFrame(scrollingTop);
+    window.scrollTo(0, y - y / 30);
+  }
 }
 
 /*
