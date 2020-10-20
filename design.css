@@ -111,11 +111,6 @@ tr:nth-child(even) {
 	text-align: center;
 }
 
-.toFadeIn
-{
-    opacity:0;
-}
-
 .footer{
 	grid-column-start: 1;
 	grid-column-end: 5;
