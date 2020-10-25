@@ -111,14 +111,12 @@ tr:nth-child(even) {
 	text-align: center;
 }
 
-#fadeEffect{
-    animation: fadeIn 3s;
+.footer{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	background-color: gray;
+	height: 150px;
+	text-align: center;
 }
-@keyframes fadeIn {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
+
+.topLink{cursor: pointer;}
