@@ -1,7 +1,6 @@
 .layout{
 	display: inline-grid;
 	grid-template-columns: auto auto auto auto;
-	grid-gap: 40px;
 	background-image: url("images/gray.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -23,15 +22,16 @@ img {
 .topHeader {
   grid-column-start: 1;
   grid-column-end: 4;
-  background-image: url("images/photo2.jpg");
-  width: 100%;
-  height: 600px;
-  padding: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: red;
-  text-shadow: 2px 2px 5px white;
+  position: relative;
+}
+
+.greetingPosition{
+	text-align: center;
+	text-shadow: 2px 2px 5px white;
+	color: red;
+	position: absolute;
+ 	top: 8%;
+  	left: 55%;
 }
 
 #roundCorner{
@@ -61,10 +61,17 @@ h3{
 
 .colorCase1{background-color: #74B7B8;}
 
+.divDistance{
+	width: 55vw;
+	margin: auto; 
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
 .widthDistance{
 	width: 55vw;
 	margin: auto; 
-	margin-bottom: 40px;
+	margin-bottom: 5%;
 }
 
 .tableDistance{
@@ -79,12 +86,13 @@ h3{
 	}
 
 .leftGrid{
-	margin-left: 100px;
+	margin-left: 10%;
+	margin-right: 5%;
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
 .rightGrid{
-	margin-right: 100px;
+	margin-right: 10%;
 	grid-column-start: 3;
 	grid-column-end: 4;
 }
@@ -120,3 +128,16 @@ tr:nth-child(even) {
 }
 
 .topLink{cursor: pointer;}
+
+@media screen and (max-width: 480px){
+	.layout > div, table{font-size: 2.67vw;}
+	.leftGrid{margin-left: 3%;}
+	.indentInput{text-indent: 15px;}
+	.textStyle{line-height: 2;}
+	.divDistance{width: 70vw;}
+	.widthDistance{width: 80vw;}
+	.markHighlight{text-align: left;}
+	h3{text-align: left;}
+	.tableDistance{width: 85vw;}
+	.greetingPosition{left: 40%;}
+}
