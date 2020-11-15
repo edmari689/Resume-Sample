@@ -55,9 +55,13 @@ h2{
 h3{
 	color: #400E3A;
 	font-style: italic;
+	text-align: left;
 }
 
-.markHighlight{font-weight: bold;}
+.markHighlight{
+	font-weight: bold;
+	text-align: left;
+}
 
 .colorCase1{background-color: #74B7B8;}
 
@@ -136,8 +140,28 @@ tr:nth-child(even) {
 	.textStyle{line-height: 2;}
 	.divDistance{width: 70vw;}
 	.widthDistance{width: 80vw;}
-	.markHighlight{text-align: left;}
-	h3{text-align: left;}
 	.tableDistance{width: 85vw;}
 	.greetingPosition{left: 40%;}
+}
+
+@media screen and (min-width: 481px) and (max-device-width: 768px) 
+	and (orientation: portrait) {
+		.layout > div, table{font-size: 2.23vw;}
+		.leftGrid{margin-left: 3%;}
+		.indentInput{text-indent: 20px;}
+		.textStyle{line-height: 1.9;}
+		.divDistance{width: 63vw;}
+		.widthDistance{width: 72vw;}
+		.greetingPosition{left: 45%;}
+}
+
+@media screen and (min-width: 481px) and (max-device-width: 768px) 
+	and (orientation: landscape) {
+		.layout > div, table{font-size: 2.25vw;}
+		.leftGrid{margin-left: 5%;}
+		.indentInput{text-indent: 22px;}
+		.textStyle{line-height: 1.9;}
+		.divDistance{width: 67vw;}
+		.widthDistance{width: 75vw;}
+		.greetingPosition{left: 50%;}
 }
