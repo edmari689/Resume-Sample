@@ -167,5 +167,12 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 769px) and (max-device-width: 1024px){
-		
+	.layout > div, table{font-size: 2.15vw;}
+	.leftGrid{margin-left: 6%;}
+	.indentInput{text-indent: 30px;}
+	.textStyle{line-height: 1.8;}
+	.divDistance{width: 60vw;}
+	.widthDistance{width: 65vw;}
+	.tableDistance{width: 85vw;}
+	.greetingPosition{left: 50%;}
 }
