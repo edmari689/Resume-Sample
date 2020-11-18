@@ -178,5 +178,10 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 1025px) and (max-device-width: 1280px){
-	
+	.layout > div, table{font-size: 2.1vw;}
+	.leftGrid{margin-left: 8%;}
+	.textStyle{line-height: 1.6;}
+	.divDistance{width: 58vw;}
+	.widthDistance{width: 58vw;}
+	.tableDistance{width: 82vw;}
 }
