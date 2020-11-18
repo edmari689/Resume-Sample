@@ -176,3 +176,7 @@ tr:nth-child(even) {
 	.tableDistance{width: 85vw;}
 	.greetingPosition{left: 50%;}
 }
+
+@media screen and (min-width: 1025px) and (max-device-width: 1280px){
+	
+}
